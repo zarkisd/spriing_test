@@ -2,7 +2,7 @@ package org.testcode.web;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
-import org.testcode.service.posts.PostService;
+import org.testcode.service.posts.PostsService;
 import org.testcode.web.dto.PostSaveRequestDto;
 import org.testcode.web.dto.PostsResponseDto;
 import org.testcode.web.dto.PostsUpdateRequestDto;
@@ -11,7 +11,7 @@ import org.testcode.web.dto.PostsUpdateRequestDto;
 @RestController
 public class PostsApiController {
 
-    private final PostService postsService;
+    private final PostsService postsService;
 
     @PostMapping("/api/v1/posts")
     public Long save(@RequestBody PostSaveRequestDto requestDto) {
@@ -25,8 +25,12 @@ public class PostsApiController {
     }
 
     @GetMapping("/api/v1/posts/{id}")
-    public PostsResponseDto findById(@PathVariable Long id){
+    public PostsResponseDto findById(@PathVariable Long id) {
         return postsService.findById(id);
+    }
 
+    public Long delete(@PathVariable Long id) {
+        postsService.delete(id);
+        return id;
     }
 }

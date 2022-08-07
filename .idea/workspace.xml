@@ -4,27 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12ce616a-a12e-43b6-9142-7a19be034cc2" name="Changes" comment="api 등록">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/testcode/domain/BaseTimeEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/testcode/web/IndexController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/testcode/web/dto/PostsResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/testcode/web/dto/PostsUpdateRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/app/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layout/footer.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layout/header.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/posts-save.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/testcode/web/IndexControllerTest.java" afterDir="false" />
+    <list default="true" id="12ce616a-a12e-43b6-9142-7a19be034cc2" name="Changes" comment="게시글 등록까지 ~144">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/testcode/web/dto/PostListResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/posts-update.mustache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/testcode/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/testcode/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/testcode/domain/posts/Posts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/testcode/domain/posts/Posts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/testcode/service/posts/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/testcode/service/posts/PostService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/testcode/domain/posts/PostsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/testcode/domain/posts/PostsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/testcode/service/posts/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/testcode/service/posts/PostsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/testcode/web/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/testcode/web/IndexController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/testcode/web/PostsApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/testcode/web/PostsApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/testcode/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/testcode/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/testcode/domain/posts/PostsRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/testcode/domain/posts/PostsRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/testcode/web/PostsApiControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/testcode/web/PostsApiControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/app/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/app/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.mustache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,6 +90,9 @@
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.testcode.web.dto" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\intellij\spriing_test\src\main\resources\static\js\app" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="org.testcode.domain" />
@@ -242,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659270172628</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="게시글 등록까지 ~144">
+      <created>1659794033745</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1659794033745</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -264,6 +263,7 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="junit test" />
     <MESSAGE value="api 등록" />
-    <option name="LAST_COMMIT_MESSAGE" value="api 등록" />
+    <MESSAGE value="게시글 등록까지 ~144" />
+    <option name="LAST_COMMIT_MESSAGE" value="게시글 등록까지 ~144" />
   </component>
 </project>
